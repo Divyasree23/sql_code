@@ -11,5 +11,5 @@ SELECT student_id, marks
 FROM [test].[dbo].[exams]
 where subject in ('Physics','Chemistry')
 group by student_id, marks
-having count(100) = 2
+having count(100) = 2;
 
