@@ -10,6 +10,6 @@ insert into exams values (1,'Chemistry',91),(1,'Physics',91),(1,'Maths',92)
 SELECT student_id, marks
 FROM [test].[dbo].[exams]
 where subject in ('Physics','Chemistry')
-group by student_id, marks
+group by student_id,marks
 having count(100) = 2;
 
